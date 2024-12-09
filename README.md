@@ -1,6 +1,11 @@
 # PKI_Tips
 Let's put some command lines I sometime use, then sort them later :)
 
+## Convert RSA to PEM
+```bash
+$ ssh-keygen -f adyenSFTP_id_rsa.pub -m 'PEM' -e
+```
+
 ## Show remote server's certification
 ```bash
 % openssl s_client -connect palcert-live.adyen.com:443 -showcerts
