@@ -3,7 +3,12 @@ Let's put some command lines I sometime use, then sort them later :)
 
 ## Convert RSA to PEM
 ```bash
-$ ssh-keygen -f adyenSFTP_id_rsa.pub -m 'PEM' -e
+$ ssh-keygen -f id_rsa.pub -m 'PEM' -e
+```
+
+## Convert PEM to RSA
+```bash
+% ssh-keygen -i -f key_file
 ```
 
 ## Show remote server's certification
